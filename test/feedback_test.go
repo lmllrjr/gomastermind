@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/lmllr/gomastermind/packages/get"
+	"github.com/lmllrjr/gomastermind/packages/get"
 )
 
 func TestFeedback(t *testing.T) {

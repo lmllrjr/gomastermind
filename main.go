@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lmllr/gomastermind/packages/get"
+	"github.com/lmllrjr/gomastermind/packages/get"
 )
 
 func main() {
@@ -21,10 +21,13 @@ func main() {
 		fmt.Println(fdbk)
 
 		if get.Compare(code, ui) {
-			fmt.Println("Code cracked 🔓")
+			fmt.Println("\nCode cracked 🔓")
 			os.Exit(0)
 		}
 	}
+
+	fmt.Printf("\n{%c %c %c %c}\n", code[0], code[1], code[2], code[3])
+	fmt.Fprintln(os.Stdout, []any{"Code not cracked 🔒"}...)
 }
 
 // OBJECT OF THE GAME

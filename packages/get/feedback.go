@@ -19,6 +19,7 @@ func Fdbk(c []byte, g []byte) []string {
 	for i, v := range c {
 		if v == g[i] {
 			b[i] = [2]bool{true, true}
+			continue
 		} else {
 			for j, v2 := range g {
 				if v2 == v {
